@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "协同止付回执请求",
+  "type": "object",
+  "required": [
+    "receipt_id",
+    "case_id",
+    "type",
+    "actor_role",
+    "occurred_at",
+    "risk_level",
+    "material_codes"
+  ],
+  "properties": {
+    "receipt_id": {},
+    "case_id": {},
+    "type": {},
+    "actor_role": {},
+    "occurred_at": {},
+    "risk_level": {},
+    "material_codes": {}
+  },
+  "additionalProperties": false
+}

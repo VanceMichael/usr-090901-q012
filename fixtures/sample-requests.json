@@ -1,0 +1,11 @@
+[
+  {
+    "receipt_id": "risk-1",
+    "case_id": "case-889",
+    "type": "risk_registered",
+    "actor_role": "teller",
+    "occurred_at": "2026-09-08T10:54:00+08:00",
+    "risk_level": "high",
+    "material_codes": ["transaction_summary", "customer_contact"]
+  }
+]
