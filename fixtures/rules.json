@@ -1,0 +1,10 @@
+{
+  "version": "2026-09-08",
+  "theme": "银行警方联手拦截被骗现金",
+  "reason_codes": [
+    "FRAUD_INTERCEPT",
+    "MULTI_PARTY_STATE",
+    "HOLD_EXPIRY"
+  ],
+  "notes": "Deterministic evaluation fixture; implementation must not fetch remote data."
+}

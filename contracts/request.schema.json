@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "可疑取现协同止付事件服务 request",
+  "type": "object",
+  "required": [
+    "event_id",
+    "case_id",
+    "case_revision",
+    "type",
+    "actor_role",
+    "amount_cents",
+    "occurred_at"
+  ],
+  "properties": {
+    "event_id": {},
+    "case_id": {},
+    "case_revision": {},
+    "type": {},
+    "actor_role": {},
+    "amount_cents": {},
+    "occurred_at": {}
+  },
+  "additionalProperties": false
+}
