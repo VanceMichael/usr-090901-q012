@@ -1,24 +1,24 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "可疑取现协同止付事件服务 request",
+  "title": "协同止付回执请求",
   "type": "object",
   "required": [
-    "event_id",
+    "receipt_id",
     "case_id",
-    "case_revision",
     "type",
     "actor_role",
-    "amount_cents",
-    "occurred_at"
+    "occurred_at",
+    "risk_level",
+    "material_codes"
   ],
   "properties": {
-    "event_id": {},
+    "receipt_id": {},
     "case_id": {},
-    "case_revision": {},
     "type": {},
     "actor_role": {},
-    "amount_cents": {},
-    "occurred_at": {}
+    "occurred_at": {},
+    "risk_level": {},
+    "material_codes": {}
   },
   "additionalProperties": false
 }

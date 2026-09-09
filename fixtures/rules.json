@@ -2,9 +2,11 @@
   "version": "2026-09-08",
   "theme": "银行警方联手拦截被骗现金",
   "reason_codes": [
-    "FRAUD_INTERCEPT",
-    "MULTI_PARTY_STATE",
-    "HOLD_EXPIRY"
+    "CONTACT_DUE",
+    "MATERIAL_BLOCKED",
+    "ACTION_OVERDUE",
+    "ROLE_NOT_ALLOWED",
+    "HOLIDAY_ROLLOVER"
   ],
-  "notes": "Deterministic evaluation fixture; implementation must not fetch remote data."
+  "notes": "工作时间、节假日顺延和处置权限按本地规则计算。"
 }

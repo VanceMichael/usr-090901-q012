@@ -1,15 +1,11 @@
-# 可疑取现协同止付事件服务 scaffold
+# 可疑取现协同止付时限服务
 
-This repository is an intentionally incomplete starting point for a pure backend service. It contains input contracts, deterministic fixtures, and a Docker-based scaffold validator; no requested business API is implemented.
+该仓库准备了脱敏交易、风险级别、机构工作日历、动作权限和处置时限等资料，用于建设协同止付工作单后台。项目使用 Go 1.25、PostgreSQL 和 Docker Compose，目前提供请求契约、固定规则、样例数据以及基础容器检查。
 
-Business theme: 银行警方联手拦截被骗现金
-Theme source: https://www.chinanews.com/scroll-news/news1.html
-Required stack: Go 1.25, PostgreSQL, Docker Compose
-
-Validate the baseline inputs with:
+运行以下命令可以验证基础资料是否完整：
 
 ```sh
 docker compose run --rm --no-deps scaffold-check
 ```
 
-The implementation must preserve the contracts and fixtures, add the service and its automated tests, and provide a repeatable Docker-based black-box self-test. External production systems must not be used.
+处置期限和角色范围均以本地夹具为准，开发环境不连接银行核心或警务系统。
