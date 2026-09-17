@@ -8,5 +8,59 @@
     "ROLE_NOT_ALLOWED",
     "HOLIDAY_ROLLOVER"
   ],
-  "notes": "工作时间、节假日顺延和处置权限按本地规则计算。"
+  "notes": "工作时间、节假日顺延和处置权限按本地规则计算。",
+  "timezone": "Asia/Shanghai",
+  "working_window": { "start": "09:00", "end": "17:00" },
+  "working_weekdays": [1, 2, 3, 4, 5],
+  "holidays": [
+    "2026-09-25",
+    "2026-10-01",
+    "2026-10-02",
+    "2026-10-05",
+    "2026-10-06",
+    "2026-10-07"
+  ],
+  "receipt_types": [
+    "risk_registered",
+    "customer_contacted",
+    "material_submitted",
+    "decision_release",
+    "decision_escalate"
+  ],
+  "risk_levels": ["high", "medium", "low"],
+  "roles": ["teller", "bank_reviewer", "anti_fraud_officer"],
+  "permissions": {
+    "risk_registered": ["teller", "anti_fraud_officer"],
+    "customer_contacted": ["teller", "bank_reviewer"],
+    "material_submitted": ["teller", "bank_reviewer", "anti_fraud_officer"],
+    "decision_release": ["anti_fraud_officer"],
+    "decision_escalate": ["bank_reviewer", "anti_fraud_officer"]
+  },
+  "required_materials": {
+    "high": ["transaction_summary", "customer_contact", "id_verification"],
+    "medium": ["transaction_summary", "customer_contact"],
+    "low": ["transaction_summary"]
+  },
+  "sla_business_hours": {
+    "contact": { "high": 2, "medium": 4, "low": 8 },
+    "review": { "high": 4, "medium": 8, "low": 16 },
+    "decision": { "high": 8, "medium": 24, "low": 48 }
+  },
+  "responsible_orgs": {
+    "awaiting_contact": "branch_outlet",
+    "awaiting_review": "bank_backoffice",
+    "awaiting_decision": "anti_fraud_center"
+  },
+  "masking": {
+    "teller": { "amount": "band", "contact": "hidden" },
+    "bank_reviewer": { "amount": "full", "contact": "masked" },
+    "anti_fraud_officer": { "amount": "full", "contact": "full" }
+  },
+  "amount_bands": [
+    { "min_cents": 0, "label": "10万以下" },
+    { "min_cents": 10000000, "label": "10万-50万" },
+    { "min_cents": 50000000, "label": "50万-100万" },
+    { "min_cents": 100000000, "label": "100万-500万" },
+    { "min_cents": 500000000, "label": "500万以上" }
+  ]
 }

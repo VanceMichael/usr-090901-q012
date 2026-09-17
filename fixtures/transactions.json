@@ -1,0 +1,44 @@
+[
+  {
+    "case_id": "case-889",
+    "amount_cents": 188000000,
+    "currency": "CNY",
+    "customer_contact": "+86-138-0000-1234"
+  },
+  {
+    "case_id": "case-901",
+    "amount_cents": 66000000,
+    "currency": "CNY",
+    "customer_contact": "+86-139-1111-2222"
+  },
+  {
+    "case_id": "case-902",
+    "amount_cents": 520000000,
+    "currency": "CNY",
+    "customer_contact": "+86-137-3333-4444"
+  },
+  {
+    "case_id": "case-903",
+    "amount_cents": 230000000,
+    "currency": "CNY",
+    "customer_contact": "+86-135-5555-6666"
+  },
+  {
+    "case_id": "case-904",
+    "amount_cents": 45000000,
+    "currency": "CNY",
+    "customer_contact": "+86-136-7777-8888"
+  },
+  {
+    "case_id": "case-905",
+    "amount_cents": 98000000,
+    "currency": "CNY",
+    "customer_contact": "+86-130-9999-0000"
+  },
+  {
+    "case_id": "case-906",
+    "amount_cents": 12000000,
+    "currency": "CNY",
+    "customer_contact": "+86-131-2222-3333"
+  }
+]
